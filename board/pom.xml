@@ -82,7 +82,7 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
-
+		
 		<!--  Mybatis : wc -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -122,14 +122,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-	
-		<!-- Test -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.7</version>
-			<scope>test</scope>
-		</dependency>        
+		
 	</dependencies>
     <build>
         <plugins>

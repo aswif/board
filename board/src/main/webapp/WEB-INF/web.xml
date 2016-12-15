@@ -11,7 +11,7 @@
 	
 	<!--  시작: wc -->
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>/views/ListView.jsp</welcome-file>
 	</welcome-file-list>
 	
 	<!--  한글 지원을 위한 필터 추가: wc  -->
