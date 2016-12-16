@@ -3,10 +3,10 @@
 <html lang="ko">
 <head>
 	<title>List</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
+	<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> --> 
 	
 	<!--  bootstrap -->
-	<!-- <link href='/META-INF/resources/webjars/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>--> 
+	<link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container col-md-8">
@@ -23,7 +23,7 @@
 				<label class="sr-only" for="search">Email address</label>
 				<input type="text" class="form-control" id="search" placeholder="Search term">
 			</div>
-			<button type="submit" class="btn btn-default">Search</button>
+			<button type="button" class="btn btn-default">Search</button>
 		</form>
 		
 		<!--  middle -->
@@ -49,19 +49,15 @@
 		</table>
 		
 		<!-- bottom  -->
-		<form class="form-inline text-right">
-			<div class="form-group">
-				<select class="form-control" >
-	                <option> Name </option>
-	                <option> Title </option>
-	                <option> Content </option>
-	            </select>
+		<form class="form-inline">
+			<div class="btn-group">
+				<button type="button" class="btn btn-default">Apple</button>
+				<button type="button" class="btn btn-default">Samsung</button>
+				<button type="button" class="btn btn-default">Sony</button>
 			</div>
-			<div class="form-group">
-				<label class="sr-only" for="search">Email address</label>
-				<input type="text" class="form-control" id="search" placeholder="Search term">
+			<div class="text-right">
+			<button type="button" class="btn btn-default text-right">Write</button>
 			</div>
-			<button type="submit" class="btn btn-default">Search</button>
 		</form>
 		
 	</div>
