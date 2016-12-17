@@ -9,6 +9,7 @@
 <body>
 	<div class="container col-md-8">
 		<!--  Top  -->
+		<P>test </P>
 		<form class="form-inline text-right">
 			<div class="form-group">
 				<select class="form-control" >
@@ -52,7 +53,7 @@
 				<button type="button" class="btn btn-default">Previous</button>
 				<button type="button" class="btn btn-default">Next</button>
 			</div>
-			<button type="button" class="btn btn-default">Write</button>
+			<button type="button" class="btn btn-default" onclick="writeView.do">Write</button>
 		</form>
 	</div>
 </body>

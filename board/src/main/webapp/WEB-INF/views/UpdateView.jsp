@@ -1,4 +1,3 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,51 +7,21 @@
 </head>
 <body>
 	<div class="container col-md-8">
-		<!--  Top  -->
+		<div class="form-group">
+			<label for="usr">Name:</label>
+			<input type="text" class="form-control" id="usr">
+		</div>
+		<div class="form-group">
+			<label for="title">Title:</label>
+			<input type="text" class="form-control" id="title">
+		</div>
+		<div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea class="form-control" rows="10" id="comment"></textarea>
+		</div>
 		<form class="form-inline text-right">
-			<div class="form-group">
-				<select class="form-control" >
-	                <option> Name </option>
-	                <option> Title </option>
-	                <option> Content </option>
-	            </select>
-			</div>
-			<div class="form-group">
-				<label class="sr-only" for="search">Email address</label>
-				<input type="text" class="form-control" id="search" placeholder="Search term">
-			</div>
-			<button type="button" class="btn btn-default">Search</button>
-		</form>
-		
-		<!--  middle -->
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th>No.</th>
-					<th>Title</th>
-					<th>Writer</th>
-					<th>Hits</th>
-					<th>Date</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>empty</td>
-					<td>empty</td>
-					<td>empty</td>
-					<td>empty</td>
-					<td>empty</td>
-				</tr>
-			</tbody>
-		</table>
-		
-		<!-- bottom  -->
-		<form class="form-inline text-right">
-			<div class="btn-group">
-				<button type="button" class="btn btn-default">Previous</button>
-				<button type="button" class="btn btn-default">Next</button>
-			</div>			
-			<button type="button" class="btn btn-default">Write</button>
+			<button type="button" class="btn btn-default" onclick="listView.do">Register</button>
+			<button type="button" class="btn btn-default" onclick="history.back()">Previous</button>
 		</form>
 	</div>
 </body>

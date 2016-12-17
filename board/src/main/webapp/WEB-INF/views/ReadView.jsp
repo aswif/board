@@ -8,51 +8,41 @@
 </head>
 <body>
 	<div class="container col-md-8">
-		<!--  Top  -->
-		<form class="form-inline text-right">
-			<div class="form-group">
-				<select class="form-control" >
-	                <option> Name </option>
-	                <option> Title </option>
-	                <option> Content </option>
-	            </select>
-			</div>
-			<div class="form-group">
-				<label class="sr-only" for="search">Email address</label>
-				<input type="text" class="form-control" id="search" placeholder="Search term">
-			</div>
-			<button type="button" class="btn btn-default">Search</button>
-		</form>
-		
-		<!--  middle -->
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th>No.</th>
-					<th>Title</th>
-					<th>Writer</th>
-					<th>Hits</th>
-					<th>Date</th>
-				</tr>
-			</thead>
+		<table class="table table-bordered">
 			<tbody>
 				<tr>
+					<td>Name</td>
 					<td>empty</td>
+					<td>Num</td>
 					<td>empty</td>
+					<td>Date</td>
 					<td>empty</td>
-					<td>empty</td>
+				</tr>
+				<tr>
+					<td>Title</td>
+					<td colspan="3">empty</td>
+					<td>Count</td>
 					<td>empty</td>
 				</tr>
 			</tbody>
 		</table>
+		<div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea class="form-control" rows="10" id="comment"></textarea>
+		</div>
 		
-		<!-- bottom  -->
+		<form class="form-inline">
+			<div class="form-group">
+				<label class="sr-only" for="comment">Comment</label>
+				<input type="text" class="form-control" id="comment">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		
 		<form class="form-inline text-right">
-			<div class="btn-group">
-				<button type="button" class="btn btn-default">Previous</button>
-				<button type="button" class="btn btn-default">Next</button>
-			</div>			
-			<button type="button" class="btn btn-default">Write</button>
+			<button type="button" class="btn btn-default" onclick="updateView.do">Update</button>
+			<button type="button" class="btn btn-default" onclick="deleteView.do">Delete</button>
+			<button type="button" class="btn btn-default" onclick="history.back()">List</button>
 		</form>
 	</div>
 </body>
