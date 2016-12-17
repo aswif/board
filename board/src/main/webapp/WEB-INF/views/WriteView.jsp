@@ -16,7 +16,7 @@
 			<input type="text" class="form-control" id="title">
 		</div>
 		<div class="form-group">
-			<label for="comment">Comment:</label>
+			<label for="comment">Content:</label>
 			<textarea class="form-control" rows="10" id="comment"></textarea>
 		</div>
 		<form class="form-inline text-right">

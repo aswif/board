@@ -27,18 +27,18 @@
 			</tbody>
 		</table>
 		<div class="form-group">
-			<label for="comment">Comment:</label>
+			<label for="comment">Content:</label>
 			<textarea class="form-control" rows="10" id="comment"></textarea>
 		</div>
 		
 		<form class="form-inline">
 			<div class="form-group">
 				<label class="sr-only" for="comment">Comment</label>
-				<input type="text" class="form-control" id="comment">
+				<input type="text" class="form-control" id="comment" placeholder="Comment">
 			</div>
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
-		
+
 		<form class="form-inline text-right">
 			<button type="button" class="btn btn-default" onclick="updateView.do">Update</button>
 			<button type="button" class="btn btn-default" onclick="deleteView.do">Delete</button>
