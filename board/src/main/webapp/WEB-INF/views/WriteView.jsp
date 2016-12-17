@@ -30,7 +30,7 @@
 				<tr>
 					<th>No.</th>
 					<th>Title</th>
-					<th>Name</th>
+					<th>Writer</th>
 					<th>Hits</th>
 					<th>Date</th>
 				</tr>
@@ -51,7 +51,7 @@
 			<div class="btn-group">
 				<button type="button" class="btn btn-default">Previous</button>
 				<button type="button" class="btn btn-default">Next</button>
-			</div>
+			</div>			
 			<button type="button" class="btn btn-default">Write</button>
 		</form>
 	</div>
