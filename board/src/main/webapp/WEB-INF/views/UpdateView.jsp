@@ -1,40 +1,48 @@
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page pageEncoding="utf-8" %> <!-- 한글 -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>List</title>
+	<title>Update</title>
 	<!--  bootstrap -->
 	<link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="resources/bootstrap/js/list.js"></script>
 </head>
 <body>
-	<div class="container col-md-8">
-		<table class="table table-bordered">
-			<tbody>
-				<tr>
-					<td>Name</td>
-					<td><input type="text" class="form-control"></td>
-					<td>Num</td>
-					<td>empty</td>
-					<td>Date</td>
-					<td>empty</td>
-				</tr>
-				<tr>
-					<td>Title</td>
-					<td colspan="3"><input type="text" class="form-control"></td>
-					<td>Count</td>
-					<td>empty</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="form-group">
-			<label for="comment">Content:</label>
-			<textarea class="form-control" rows="10" id="comment"></textarea>
+	<div class="container">
+		<div class="col-md-12">
+			<div class="row">
+				<form name="write">
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td>작성자</td>
+								<td><input type="text" class="form-control" name="name"></td>
+								<td>번호</td>
+								<td>empty</td>
+								<td>작성일</td>
+								<td>empty</td>
+							</tr>
+							<tr>
+								<td>제목</td>
+								<td colspan="3"><input type="text" class="form-control" name="title"></td>
+								<td>조회수</td>
+								<td>empty</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<div class="form-group">
+						<label for="content">내용:</label>
+						<textarea class="form-control" rows="10" name="content"></textarea>
+					</div>
+				</form>
+				
+				<form class="form-inline pull-right">
+					<button type="button" class="btn btn-default" onclick="javascript:checkForm()">저장</button>
+					<button type="button" class="btn btn-default" onclick="javascript:list()">목록</button>
+				</form>
+			</div>
 		</div>
-		
-		<form class="form-inline text-right">
-			<button type="button" class="btn btn-default" onclick="listView.do">Save</button>
-			<button type="button" class="btn btn-default" onclick="history.back()">List</button>
-		</form>
 	</div>
 </body>
 </html>
